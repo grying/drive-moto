@@ -1,0 +1,120 @@
+$accent: #1C62CD;
+$silver: #C4C4C4;
+$defoult: #F0F0F4;
+$basic:#2F3035;
+body{
+    color: $basic;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-size: 20px;
+    line-height: 24px;
+    @extend %pro-400;
+}
+  .tabs-content{
+    display: none;
+  }
+  .tabs-content--active{
+    display: block;
+  }
+.products__item-not-avaible .products__item-price{
+  display: none;
+}
+.products__item-notify-text:hover  .products__item{
+  color: $basic;
+}
+.products__item-notify-text{
+  display: none;
+  @extend %pro-700;
+  font-size: 18px;
+  line-height: 21px;
+
+}
+
+.products__item-not-avaible .products__item-notify-text{
+  display: block;
+}
+.products__item-not-avaible .products__item-basket{
+ display: none;
+}
+.products__item-not-avaible{
+  display: block;
+}
+.products__item-notify-link{
+  display: none;
+}
+.products__item-not-avaible .products__item-title{
+  padding-bottom: 13px;
+}
+.products__item-not-avaible .products__item-notify-link{
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: $basic;
+  text-align: center;
+  span{
+    border-bottom: 1px solid $accent;
+    text-align: center;
+
+  }
+}
+.breadcrumbs{
+  margin-bottom: 40px;
+  &__list-item{
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    position: relative;
+    line-height: 18px;
+    font-size: 15px;
+    color: $silver;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/link-arrow.svg');
+      width: 6px;
+      height: 11px;
+      right: 0;
+      bottom: 5px;
+
+    }
+    &:last-child::after{
+      display: none;
+    }
+  }
+}
+.select-item{
+  border: 1px solid #D7D9DF;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 34px;
+  padding: 7px 10px 7px 20px;
+}
+//   
+%pro-700{
+    font-family: 'SFProDisplay-Bold',sans-serif;
+    font-weight: 700;
+}
+%pro-600{
+    font-family: 'SFProDisplay-Semibold',sans-serif;
+    font-weight: 600;
+}
+%pro-500{
+    font-family: 'SFProDisplay-Medium',sans-serif;
+    font-weight: 500;
+}
+%pro-400{
+    font-family: 'SFProDisplay-Regular',sans-serif;
+    font-weight: 400;
+}
+$accent: #1C62CD;
+$silver: #C4C4C4;
+$defoult: #F0F0F4;

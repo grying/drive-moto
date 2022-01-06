@@ -17,8 +17,10 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
+    "ion-rangeslider": "^2.3.1",
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
+    "rateyo": "^3.0.0-alpha.2",
     "sass": "^1.43.4",
     "slick-carousel": "^1.8.1"
   },
